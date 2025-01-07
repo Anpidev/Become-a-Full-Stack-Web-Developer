@@ -1,0 +1,191 @@
+/* Reset de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+header {
+  margin-bottom: 200px; /* Ajusta el valor según lo que desees */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h1 img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+/* Estilo común para los dados */
+#lanzamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dado {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Los dados se alinearán horizontalmente por defecto */
+}
+
+li {
+  margin: 10px;
+  display: none; /* Ocultar todas las caras por defecto */
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+/* Ocultar los textos "Dado 1" y "Dado 2" por defecto */
+p {
+  display: none;
+}
+
+/* Botón */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Mensajes de resultados */
+#mensaje {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------ */
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+
+    header {
+        margin-bottom: 100px; /* Ajusta el valor según lo que desees */
+      }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #lanzamiento {
+    flex-direction: column; /* Cambiar los dados a disposición vertical */
+  }
+
+  ul {
+    flex-direction: column; /* Asegurar que los dados estén verticales */
+  }
+
+  li img {
+    width: 60px;
+    height: 60px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  #mensaje {
+    font-size: 1.2rem;
+  }
+}
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #lanzamiento {
+    gap: 25px;
+  }
+
+  li img {
+    width: 70px;
+    height: 70px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 9px 18px;
+  }
+
+  #mensaje {
+    font-size: 1.4rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+  #lanzamiento {
+    gap: 40px;
+  }
+
+  ul {
+    flex-direction: row; /* Los dados estarán en fila en pantallas grandes */
+  }
+
+  li img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  #mensaje {
+    font-size: 1.5rem;
+  }
+}
