@@ -1,0 +1,20 @@
+{
+  "name": "become-a-full-stack-web-developer",
+  "version": "1.0.0",
+  "description": "HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anpidev/Become-a-Full-Stack-Web-Developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anpidev/Become-a-Full-Stack-Web-Developer/issues"
+  },
+  "homepage": "https://github.com/Anpidev/Become-a-Full-Stack-Web-Developer#readme"
+}
